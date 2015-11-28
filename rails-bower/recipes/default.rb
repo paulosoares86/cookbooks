@@ -11,6 +11,10 @@ package "nodejs" do
   action :install
 end
 
+package "npm" do
+  action :install
+end
+
 execute "install bower" do
   command "sudo npm install bower -g"
   action :run
