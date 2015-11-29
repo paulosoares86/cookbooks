@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-package "nodejs" do
+package "node" do
   action :install
 end
 
