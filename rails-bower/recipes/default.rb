@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-execute "add nodejs ppa"
+execute "add nodejs ppa" do
   command "curl -sL https://deb.nodesource.com/setup | sudo bash -"
   action :run
 end
