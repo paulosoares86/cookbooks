@@ -15,6 +15,11 @@ package "npm" do
   action :install
 end
 
+execute "update gem" do
+  command "sudo gem update"
+  action :run
+end
+
 execute "install bower" do
   command "sudo npm install bower -g"
   action :run
