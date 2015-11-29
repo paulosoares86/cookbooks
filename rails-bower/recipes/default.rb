@@ -7,7 +7,15 @@
 # All rights reserved - Do Not Redistribute
 #
 
-package "node" do
+execute "add nodejs ppa"
+  command "curl -sL https://deb.nodesource.com/setup | sudo bash -"
+end
+
+package "nodejs" do
+  action :install
+end
+
+package "build-essential" do
   action :install
 end
 
