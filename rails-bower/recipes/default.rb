@@ -9,6 +9,7 @@
 
 execute "add nodejs ppa"
   command "curl -sL https://deb.nodesource.com/setup | sudo bash -"
+  action :run
 end
 
 package "nodejs" do
