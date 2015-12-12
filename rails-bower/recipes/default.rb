@@ -20,10 +20,6 @@ package "build-essential" do
   action :install
 end
 
-package "ghostscript" do
-  action :install
-end
-
 execute "update gem" do
   command "sudo gem update"
   action :run
